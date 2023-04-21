@@ -1,6 +1,10 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* layer base */
 :root {
   --header-height: 3.5rem;
@@ -45,85 +49,88 @@
     --smaller-font-size: 0.813rem;
   }
 }
+@layer base {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
 
-body {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
-}
+  h1,
+  h2,
+  h3 {
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+  }
 
-h1,
-h2,
-h3 {
-  color: var(--title-color);
-  font-weight: var(--font-bold);
-}
+  h1,
+  h2,
+  h3,
+  p {
+    line-height: 140%;
+  }
 
-h1,
-h2,
-h3,
-p {
-  line-height: 140%;
-}
+  ul {
+    list-style: none;
+  }
 
-ul {
-  list-style: none;
-}
+  a {
+    text-decoration: none;
+  }
 
-a {
-  text-decoration: none;
-}
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-button {
-  border: none;
-  outline: none;
-  cursor: pointer;
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
 }
 
 /* layer components */
-.container {
-  max-width: 1024px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
+@layer components {
+  .container {
+    max-width: 1024px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
 
-.grid {
-  display: grid;
-  gap: 1.5rem;
-}
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
 
-.section {
-  padding: 4.5rem 0 2;
-}
-.section__title {
-  position: relative;
-  font-size: var(--h1-font-size);
-  padding-left: 1.25rem;
-  margin-bottom: 2.5rem;
-}
+  .section {
+    padding: 4.5rem 0 2;
+  }
+  .section__title {
+    position: relative;
+    font-size: var(--h1-font-size);
+    padding-left: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
 
-.section__title::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 0;
-  width: 3px;
-  height: 20px;
-  background-color: var(--first-color);
+  .section__title::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 3px;
+    height: 20px;
+    background-color: var(--first-color);
+  }
 }
