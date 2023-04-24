@@ -133,4 +133,12 @@
     height: 20px;
     background-color: var(--first-color);
   }
+
+  .navbar li {
+    @apply text-base text-slate-400 hover:text-slate-200 cursor-pointer;
+  }
+
+  .navbar a.mobile-links {
+    @apply w-1/2 m-2 p-3 flex justify-center items-center text-slate-400 hover:text-slate-200 cursor-pointer text-lg;
+  }
 }

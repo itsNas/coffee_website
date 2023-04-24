@@ -48,7 +48,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 bg-black ${
+      className={`section sticky top-0 bg-black ${
         !top && `shadow-lg backdrop-blur-lg`
       } h-[70px] transition-all duration-500 z-[99]`}
     >
@@ -65,25 +65,30 @@ function Navbar() {
         </div>
         {/* NAVBAR AT 768PX & ABOVE */}
         <div>
-          <ul className="hidden md:flex md:items-center list-none">
+          <ul className="hidden md:flex md:items-center">
             <li>
-              <a href="#hero" className="mr-6">
+              <a href="#home" className="mr-6">
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="mx-6">
-                About
+              <a href="#specialty" className="mx-6">
+                Specialty
               </a>
             </li>
             <li>
-              <a href="#projects" className="mx-6">
-                Projects
+              <a href="#products" className="mx-6">
+                Products
               </a>
             </li>
             <li>
-              <a href="#contact" className="mx-6">
-                Contact
+              <a href="#premium" className="mx-6">
+                Premium
+              </a>
+            </li>
+            <li>
+              <a href="#blog" className="mx-6">
+                Blog
               </a>
             </li>
             {/* <li>
@@ -113,7 +118,7 @@ function Navbar() {
             <motion.div
               className={`fixed ${
                 scrollDirection === "down" ? "top-0" : "top-0"
-              } right-0 w-1/2 h-screen bg-black`}
+              } right-0 w-1/2 h-screen bg-zinc-900`}
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, scale: 0.5 }}
@@ -127,17 +132,20 @@ function Navbar() {
                 />
               </div>
               <div className="h-full flex flex-col justify-center items-center">
-                <a href="#hero" className="mobile-links">
+                <a href="#home" className="mobile-links">
                   Home
                 </a>
-                <a href="#about" className="mobile-links">
-                  About
+                <a href="#specialty" className="mobile-links">
+                  Specialty
                 </a>
-                <a href="#projects" className="mobile-links">
-                  Projects
+                <a href="#products" className="mobile-links">
+                  Products
                 </a>
-                <a href="#contact" className="mobile-links">
-                  Contact
+                <a href="#premium" className="mobile-links">
+                  Premium
+                </a>
+                <a href="#blog" className="mobile-links">
+                  Blog
                 </a>
                 {/* <button
                   onClick={toggleDarkMode}
