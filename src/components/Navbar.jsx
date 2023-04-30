@@ -48,7 +48,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`section sticky top-0 bg-black ${
+      className={`sticky top-0 bg-black ${
         !top && `shadow-lg backdrop-blur-lg`
       } h-[70px] transition-all duration-500 z-[99]`}
     >
