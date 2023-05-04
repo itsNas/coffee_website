@@ -11,24 +11,28 @@ function Home() {
             Choose Your Favorite Coffee and Enjoy<span>.</span>
           </h1>
           <p className="mb-8">Buy the best and delicious coffees.</p>
-          <div className="data">
+          <div className="data border-t-2 border-gray-600 pt-8 grid grid-cols-2 gap-x-6">
             <div className="data-group">
               <h2 className="data-number">120K</h2>
-              <h3 className="text-slate-50">Testimonials</h3>
+              <h3 className="data-title text-slate-50">Testimonials</h3>
               <p className="data-description">
                 Testimonials from various customers who trust us.
               </p>
             </div>
             <div className="data-group">
               <h2 className="data-number">340+</h2>
-              <h3 className="text-slate-50">Exclusive Product</h3>
+              <h3 className="data-title text-slate-50">Exclusive Product</h3>
               <p className="data-description">
                 Premium preparation with quality ingredients.
               </p>
             </div>
           </div>
           <a href="#specialty">
-            <img src={ScrollImg} alt="scroll" className="" />
+            <img
+              src={ScrollImg}
+              alt="scroll"
+              className="absolute w-24 bottom-[-7rem] left-0 right-0 my-0 mx-auto animate-[bounce_4s_ease-in-out_infinite]"
+            />
           </a>
         </div>
       </div>

@@ -141,4 +141,15 @@
   .navbar a.mobile-links {
     @apply w-1/2 m-2 p-3 flex justify-center items-center text-slate-400 hover:text-slate-200 cursor-pointer text-lg;
   }
+
+  #home .data-number {
+    color: var(--first-color);
+    font-size: var(--h1-font-size);
+    margin-bottom: 1.5rem;
+  }
+
+  #home .data-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.5rem;
+  }
 }
