@@ -90,7 +90,7 @@
   }
 
   img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
 
@@ -117,14 +117,14 @@
   .section {
     padding: 4.5rem 0 2;
   }
-  .section__title {
+  .section-title {
     position: relative;
     font-size: var(--h1-font-size);
     padding-left: 1.25rem;
     margin-bottom: 2.5rem;
   }
 
-  .section__title::before {
+  .section-title::before {
     content: "";
     position: absolute;
     top: 8px;

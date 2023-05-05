@@ -48,7 +48,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 bg-zinc-900 ${
+      className={`sticky w-full top-0 bg-zinc-900 ${
         !top && `shadow-lg backdrop-blur-lg`
       } h-[70px] transition-all duration-500 z-[99]`}
     >

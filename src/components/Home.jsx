@@ -1,6 +1,7 @@
 import React from "react";
 import ScrollImg from "../assets/img/scroll.png";
 import HomeImg from "../assets/img/home.png";
+import Specialty from "./Specialty";
 
 function Home() {
   return (
@@ -37,6 +38,7 @@ function Home() {
         </div>
       </div>
       <img src={HomeImg} alt="home" />
+      <Specialty />
     </section>
   );
 }

@@ -10,15 +10,15 @@ import {
 
 function App() {
   return (
-    <div>
+    <main>
       <Navbar />
       <Home />
-      <Specialty />
+      {/* <Specialty /> */}
       <Products />
       <Premium />
       <Blog />
       <Footer />
-    </div>
+    </main>
   );
 }
 
