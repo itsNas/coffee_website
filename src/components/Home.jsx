@@ -37,8 +37,7 @@ function Home() {
           </a>
         </div>
       </div>
-      <img src={HomeImg} alt="home" />
-      <Specialty />
+      <img src={HomeImg} alt="home" className="" />
     </section>
   );
 }

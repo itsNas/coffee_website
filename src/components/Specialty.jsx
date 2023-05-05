@@ -5,13 +5,13 @@ import Specialty3 from "../assets/img/specialty3.png";
 
 function Specialty() {
   return (
-    <section id="specialty" className="w-full h-screen">
+    <section id="specialty" className="w-full h-screen px-8 py-32">
       <div className="specialty-container">
         <div className="specialty-box">
           <h2 className="section-title">
             Specialty coffees that make you happy and cheer you up!
           </h2>
-          <a href="#" className="button-specialty">
+          <a href="#" className="button specialty">
             See more
           </a>
         </div>

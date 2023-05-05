@@ -13,7 +13,7 @@ function App() {
     <main>
       <Navbar />
       <Home />
-      {/* <Specialty /> */}
+      <Specialty />
       <Products />
       <Premium />
       <Blog />
