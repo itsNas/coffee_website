@@ -5,7 +5,7 @@ import Specialty from "./Specialty";
 
 function Home() {
   return (
-    <section id="home" className="w-full h-screen">
+    <section id="home" className="w-full h-screen mt-10">
       <div className="home-container p-10 bg-gradient-to-b from-zinc-800 to-neutral-900">
         <div className="relative">
           <h1 className="text-slate-50 text-4xl mb-5">
