@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Logo from "../assets/img/logo.png";
-import { Menu, X, Sun, Moon } from "react-feather";
+import { Menu, X } from "react-feather";
 import { motion } from "framer-motion";
 
 const handleScroll = () => {
@@ -48,8 +48,8 @@ function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 bg-zinc-900 ${
-        !top && `shadow-lg backdrop-blur-lg`
+      className={`sticky top-0 ${
+        !top && `shadow-lg backdrop-blur-lg bg-zinc-900 dark:bg-slate-800`
       } h-[70px] transition-all duration-500 z-[99]`}
     >
       <div className="navbar w-full h-full flex justify-between items-center py-4 px-6">
@@ -118,10 +118,10 @@ function Navbar() {
             <motion.div
               className={`fixed ${
                 scrollDirection === "down" ? "top-0" : "top-0"
-              } right-0 w-1/2 h-screen bg-zinc-900`}
+              } right-0 w-full h-screen shadow-lg bg-zinc-900 backdrop-blur-lg z-[1]`}
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, scale: 0.5 }}
+              exit={{ opacity: 0, x: 100 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
@@ -132,7 +132,7 @@ function Navbar() {
                 />
               </div>
               <div className="h-full flex flex-col justify-center items-center">
-                <a href="#home" className="mobile-links">
+                <a href="#" className="mobile-links">
                   Home
                 </a>
                 <a href="#specialty" className="mobile-links">

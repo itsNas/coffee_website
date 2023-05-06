@@ -162,4 +162,26 @@
     font-size: var(--normal-font-size);
     text-transform: uppercase;
   }
+
+  .specialty-img {
+    width: 5rem;
+    margin-bottom: 1rem;
+    transition: 0.4s;
+  }
+
+  .specialty-group {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .specialty-title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 0.25rem;
+  }
+
+  .specialty-group:hover .specialty-img {
+    transform: translateY(-0.25rem);
+  }
 }

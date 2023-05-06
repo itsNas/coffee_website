@@ -5,17 +5,20 @@ import Specialty3 from "../assets/img/specialty3.png";
 
 function Specialty() {
   return (
-    <section id="specialty" className="w-full h-screen px-8 py-32">
+    <section
+      id="specialty"
+      className="max-w-screen-lg m-auto md:pl-20 px-8 py-24 sm:py-32"
+    >
       <div className="specialty-container">
         <div className="specialty-box">
           <h2 className="section-title">
             Specialty coffees that make you happy and cheer you up!
           </h2>
-          <a href="#" className="button specialty">
+          <a href="#" className="button">
             See more
           </a>
         </div>
-        <div className="specialty-category">
+        <div className="specialty-category mt-16 grid grid-cols-[200px] justify-center gap-y-10">
           <div className="specialty-group">
             <img src={Specialty1} alt="specialty 1" className="specialty-img" />
             <h3 className="specialty-title">Selected Coffee</h3>
