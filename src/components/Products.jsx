@@ -1,8 +1,6 @@
 import { ShoppingBag } from "feather-icons-react/build/IconComponents";
-import Delicacies1 from "../assets/img/delicacies1.png";
-import Delicacies2 from "../assets/img/delicacies2.png";
-import Delicacies3 from "../assets/img/delicacies3.png";
 import React from "react";
+import { productData } from "../constant/ProductData";
 
 function Products() {
   return (
@@ -17,96 +15,29 @@ function Products() {
         <ul className="products-filter">
           <li className="products-items products-line">
             <h3 className="products-title">New Delicacies</h3>
-            <span className="product-stock">3 products</span>
-          </li>
-          <li className="products-items products-line">
-            <h3 className="products-title">Hot Coffee</h3>
-            <span className="product-stock">4 products</span>
-          </li>
-          <li className="products-items products-line">
-            <h3 className="products-title">Cakes And Delicacies</h3>
-            <span className="product-stock">4 products</span>
+            <span className="product-stock">{productData.length} products</span>
           </li>
         </ul>
         <div className="content-grid">
-          {/* Delicacies */}
-          <article className="products-card">
-            <div className="products-shape">
-              <img
-                src={Delicacies1}
-                alt="delicacies 1"
-                className="products-img"
-              />
-            </div>
-            <div className="products-data">
-              <h2 className="products-price"></h2>
-              <h3 className="products-name"></h3>
-              <button className="button product-button">
-                <ShoppingBag />
-              </button>
-            </div>
-          </article>
-          <article className="products-card">
-            <div className="products-shape">
-              <img
-                src={Delicacies2}
-                alt="delicacies 1"
-                className="products-img"
-              />
-            </div>
-            <div className="products-data">
-              <h2 className="products-price"></h2>
-              <h3 className="products-name"></h3>
-              <button className="button product-button">
-                <ShoppingBag />
-              </button>
-            </div>
-          </article>
-          <article className="products-card">
-            <div className="products-shape">
-              <img
-                src={Delicacies3}
-                alt="delicacies 1"
-                className="products-img"
-              />
-            </div>
-            <div className="products-data">
-              <h2 className="products-price"></h2>
-              <h3 className="products-name"></h3>
-              <button className="button product-button">
-                <ShoppingBag />
-              </button>
-            </div>
-          </article>
-
-          {/* Coffee */}
-          <article className="products-card">
-            <div className="products-shape">
-              <img src="" alt="" className="products-img" />
-            </div>
-            <div className="products-data">
-              <h2 className="products-price"></h2>
-              <h3 className="products-name"></h3>
-              <button className="button product-button">
-                <ShoppingBag />
-              </button>
-            </div>
-          </article>
-
-          {/* Cake */}
-          <article className="products-card">
-            <div className="products-shape">
-              <img src="" alt="" className="products-img" />
-            </div>
-
-            <div className="products-data">
-              <h2 className="products-price"></h2>
-              <h3 className="products-name"></h3>
-              <button className="button product-button">
-                <ShoppingBag />
-              </button>
-            </div>
-          </article>
+          {/* Map over the product data and generate product elements */}
+          {productData.map((product) => (
+            <article className="products-card" key={product.id}>
+              <div className="products-shape">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="products-img"
+                />
+              </div>
+              <div className="products-data">
+                <h2 className="products-price">{product.price}</h2>
+                <h3 className="products-name">{product.name}</h3>
+                <button className="button product-button">
+                  <ShoppingBag />
+                </button>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
