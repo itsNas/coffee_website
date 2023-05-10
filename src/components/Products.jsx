@@ -1,3 +1,7 @@
+import { ShoppingBag } from "feather-icons-react/build/IconComponents";
+import Delicacies1 from "../assets/img/delicacies1.png";
+import Delicacies2 from "../assets/img/delicacies2.png";
+import Delicacies3 from "../assets/img/delicacies3.png";
 import React from "react";
 
 function Products() {
@@ -28,17 +32,81 @@ function Products() {
           {/* Delicacies */}
           <article className="products-card">
             <div className="products-shape">
+              <img
+                src={Delicacies1}
+                alt="delicacies 1"
+                className="products-img"
+              />
+            </div>
+            <div className="products-data">
+              <h2 className="products-price"></h2>
+              <h3 className="products-name"></h3>
+              <button className="button product-button">
+                <ShoppingBag />
+              </button>
+            </div>
+          </article>
+          <article className="products-card">
+            <div className="products-shape">
+              <img
+                src={Delicacies2}
+                alt="delicacies 1"
+                className="products-img"
+              />
+            </div>
+            <div className="products-data">
+              <h2 className="products-price"></h2>
+              <h3 className="products-name"></h3>
+              <button className="button product-button">
+                <ShoppingBag />
+              </button>
+            </div>
+          </article>
+          <article className="products-card">
+            <div className="products-shape">
+              <img
+                src={Delicacies3}
+                alt="delicacies 1"
+                className="products-img"
+              />
+            </div>
+            <div className="products-data">
+              <h2 className="products-price"></h2>
+              <h3 className="products-name"></h3>
+              <button className="button product-button">
+                <ShoppingBag />
+              </button>
+            </div>
+          </article>
+
+          {/* Coffee */}
+          <article className="products-card">
+            <div className="products-shape">
+              <img src="" alt="" className="products-img" />
+            </div>
+            <div className="products-data">
+              <h2 className="products-price"></h2>
+              <h3 className="products-name"></h3>
+              <button className="button product-button">
+                <ShoppingBag />
+              </button>
+            </div>
+          </article>
+
+          {/* Cake */}
+          <article className="products-card">
+            <div className="products-shape">
               <img src="" alt="" className="products-img" />
             </div>
 
             <div className="products-data">
               <h2 className="products-price"></h2>
               <h3 className="products-name"></h3>
-              <button className="button product-button"></button>
+              <button className="button product-button">
+                <ShoppingBag />
+              </button>
             </div>
           </article>
-          {/* Coffee */}
-          {/* Cake */}
         </div>
       </div>
     </section>
