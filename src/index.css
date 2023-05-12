@@ -38,10 +38,10 @@
   --z-fixed: 100;
 }
 
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 376px) {
   :root {
     --biggest-font-size: 3.5rem;
-    --h1-font-size: 2.25rem;
+    --h1-font-size: 1.75rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -183,5 +183,35 @@
 
   .specialty-group:hover .specialty-img {
     transform: translateY(-0.25rem);
+  }
+
+  .products-line {
+    position: relative;
+  }
+
+  .products-line::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    background-color: var(--text-color-light);
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
+
+  .products-item {
+    cursor: pointer;
+  }
+
+  .products-title {
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .products-stock {
+    font-size: var(--small-font-size);
   }
 }

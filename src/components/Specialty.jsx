@@ -7,7 +7,7 @@ function Specialty() {
   return (
     <section
       id="specialty"
-      className="max-w-screen-lg m-auto px-8 pt-60 xs:pt-24 "
+      className="max-w-screen-lg m-auto px-8 pt-60 xs:pt-32 "
     >
       <div className="specialty-container">
         <div className="specialty-box">
