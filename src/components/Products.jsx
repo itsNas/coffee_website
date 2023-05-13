@@ -1,32 +1,53 @@
 import { ShoppingBag } from "feather-icons-react/build/IconComponents";
-import React from "react";
+import React, { useEffect } from "react";
 import { productData } from "../constant/ProductData";
+import mixitup from "mixitup";
 
 function Products() {
+  useEffect(() => {
+    mixitup(".products", {
+      selectors: {
+        target: ".product",
+      },
+      animation: {
+        duration: 500,
+      },
+      load: {
+        filter: ".coffee", // Default filter option
+      },
+    });
+  }, []);
+
   return (
     <section id="products" className="max-w-screen-lg m-auto px-10 pt-24 ">
       <div className="products-container">
         <h2 className="section-title">
           Choose our delicious and best products
         </h2>
-        <ul className="grid grid-cols-2 gap-10 mb-14">
-          <li className="products-items products-line">
+        <ul className="grid grid-cols-2 gap-10 mb-14 cursor-pointer">
+          <li
+            className="products-items products-line"
+            data-filter=".delicacies"
+          >
             <h3 className="products-title">New Delicacies</h3>
             <span className="products-stock">3 products</span>
           </li>
-          <li className="products-items products-line">
+          <li className="products-items products-line" data-filter=".coffee">
             <h3 className="products-title">Hot Coffee</h3>
             <span className="products-stock">4 products</span>
           </li>
-          <li className="products-items products-line">
+          <li className="products-items products-line" data-filter=".cake">
             <h3 className="products-title">Cakes and Delicacies</h3>
-            <span className="products-stock">34products</span>
+            <span className="products-stock">4products</span>
           </li>
         </ul>
-        <div className="grid grid-cols-[200px] justify-center">
+        <div className="products grid grid-cols-[200px] justify-center">
           {/* Map over the product data and generate product elements */}
           {productData.map((product) => (
-            <article className="bg-white rounded-lg" key={product.id}>
+            <article
+              className={`product ${product.className} bg-white rounded-lg`}
+              key={product.id}
+            >
               <div className="bg-zinc-200 rounded flex justify-center py-1">
                 <img
                   src={product.image}
