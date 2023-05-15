@@ -58,7 +58,7 @@ function Navbar() {
             <img
               src={Logo}
               alt="DH"
-              className="h-10 hover:opacity-75 transition-all ease-in duration-300 cursor-pointer"
+              className="h-10 w-auto hover:opacity-75 transition-all ease-in duration-300 cursor-pointer"
             />
             <p className=" font-extrabold">KONA Kopi</p>
           </a>
