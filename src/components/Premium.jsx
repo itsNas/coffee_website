@@ -5,31 +5,45 @@ import { ArrowRight } from "react-feather";
 
 function Premium() {
   return (
-    <section id="premium" className="max-w-screen-lg m-auto px-10 pt-24">
+    <section
+      id="premium"
+      className="max-w-screen-lg px-10 mt-10 pb-8 pt-8 bg-white"
+    >
       <div className="quality-container">
         <h2 className="section-title">
           We offer a premium quality and better quality preparation just for
           you!
         </h2>
-        <div className="quality-content">
-          <div className="quality-images">
-            <img src={QualityImgBig} alt="" className="quality-img-big" />
-            <img src={QualityImgSmall} alt="" className="quality-img-small" />
+        <div className="quality-content grids">
+          <div className="relative justify-self-center ">
+            <img
+              src={QualityImgBig}
+              alt="image big"
+              className="rounded-lg mb-1"
+            />
+            <img
+              src={QualityImgSmall}
+              alt="image small"
+              className="rounded-lg"
+            />
           </div>
           <div className="quality-data">
-            <h1 className="quality-title">Premium Coffee</h1>
-            <h2 className="quality-price">$94.99</h2>
-            <span className="quality-special">Special Price</span>
-            <p className="quality-description">
+            <h1 className="text-2xl mb-3">Premium Coffee</h1>
+            <h2 className="text-2xl mb-1">$94.99</h2>
+            <span className="block text-sm mb-3">Special Price</span>
+            <p className=" mb-10">
               We are delighted with our coffee. That's why you get the best
               premium coffee plus the kettle made of resistant materials that
               you see in the image, for a special price.
             </p>
-            <div className="quality-buttons">
+            <div className="flex items-center gap-8">
               <button className="button">Buy now</button>
-              <a href="#" className="quality-button">
+              <a
+                href="#"
+                className="text-base uppercase flex items-center gap-3"
+              >
                 See more
-                <ArrowRight />
+                <ArrowRight className=" h-5 hover:translate-x-1 duration-300" />
               </a>
             </div>
           </div>
