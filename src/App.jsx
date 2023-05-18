@@ -4,6 +4,7 @@ import {
   Specialty,
   Products,
   Premium,
+  Logos,
   Blog,
   Footer,
 } from "./components";
@@ -16,6 +17,7 @@ function App() {
       <Specialty />
       <Products />
       <Premium />
+      <Logos />
       <Blog />
       <Footer />
     </main>
