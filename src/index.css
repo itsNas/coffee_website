@@ -214,4 +214,15 @@
   .products-stock {
     font-size: var(--small-font-size);
   }
+
+  .logo-img {
+    width: 80px;
+    mix-blend-mode: luminosity;
+    opacity: 0.4;
+    transition: 0.4s;
+  }
+
+  .logo-img:hover {
+    opacity: 0.9;
+  }
 }
