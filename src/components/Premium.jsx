@@ -7,7 +7,7 @@ function Premium() {
   return (
     <section
       id="premium"
-      className="max-w-screen-lg px-10 mt-10 pb-8 pt-8 bg-white"
+      className="max-w-screen-lg px-10 mt-10 pb-8 pt-24 bg-white"
     >
       <div className="quality-container">
         <h2 className="section-title">
