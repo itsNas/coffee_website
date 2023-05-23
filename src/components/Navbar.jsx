@@ -60,7 +60,7 @@ function Navbar() {
               alt="DH"
               className="h-10 w-auto hover:opacity-75 transition-all ease-in duration-300 cursor-pointer"
             />
-            <p className=" font-extrabold">KONA Kopi</p>
+            <p className=" font-extrabold text-[#D38C22]">KONA Kopi</p>
           </a>
         </div>
         {/* NAVBAR AT 768PX & ABOVE */}

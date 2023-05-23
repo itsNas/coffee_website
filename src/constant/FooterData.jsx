@@ -1,3 +1,5 @@
+import { Facebook, Instagram, Twitter } from "react-feather";
+
 export const footerData = [
   {
     id: 1,
@@ -13,5 +15,20 @@ export const footerData = [
     id: 3,
     subtitle: "Office",
     information: "Monday - Saturday\n9AM - 10PM",
+  },
+  {
+    id: 4,
+    link: "https://www.facebook.com/",
+    icon: <Facebook />,
+  },
+  {
+    id: 5,
+    link: "https://www.instagram.com/",
+    icon: <Instagram />,
+  },
+  {
+    id: 6,
+    link: "https://twitter.com/",
+    icon: <Twitter />,
   },
 ];
