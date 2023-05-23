@@ -14,9 +14,9 @@ function Footer() {
               <input
                 type="email"
                 placeholder="Your email address"
-                className="border-none outline-none py-5 px-4 rounded w-3/4 text-black"
+                className="border-none outline-none py-3 px-4 rounded w-3/4 text-black"
               />
-              <button className=" p-3 text-3xl rounded inline-flex bg-[#D38C22] py-5">
+              <button className=" p-3 text-3xl rounded inline-flex bg-[#D38C22] py-3">
                 <ArrowRight className="text-black hover:translate-x-1 duration-300" />
               </button>
             </div>
