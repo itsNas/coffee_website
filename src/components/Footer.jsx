@@ -1,10 +1,15 @@
 import React from "react";
 import { ArrowRight, Facebook } from "react-feather";
 import { footerData } from "../constant/FooterData";
+import ScrollToTop from "react-scroll-to-top";
 
 function Footer() {
   return (
     <section className="max-w-screen-lg p-10 bg-black">
+      <ScrollToTop
+        smooth
+        className="rounded-full flex justify-center items-center bg-slate-50/90"
+      />
       <div className="footer-container">
         <h1 className=" text-white text-2xl mb-8">Coffee.</h1>
         <div className="grids gap-x-10 border-b border-gray-500">
