@@ -8,7 +8,7 @@ function Footer() {
     <section className="max-w-screen-lg p-10 bg-black">
       <ScrollToTop
         smooth
-        className="rounded-full flex justify-center items-center bg-slate-50/90"
+        className="rounded-full flex justify-center items-center bg-slate-50/90 p-3"
       />
       <div className="footer-container">
         <h1 className=" text-white text-2xl mb-8">Coffee.</h1>
