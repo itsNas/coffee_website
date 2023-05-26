@@ -91,13 +91,6 @@ function Navbar() {
                 Blog
               </a>
             </li>
-            {/* <li>
-              {darkMode ? (
-                <Sun className="ml-6 transition-all ease-in duration-300" />
-              ) : (
-                <Moon className="ml-6 transition-all ease-in duration-300" />
-              )}
-            </li> */}
           </ul>
         </div>
 
@@ -147,12 +140,6 @@ function Navbar() {
                 <a href="#blog" className="mobile-links">
                   Blog
                 </a>
-                {/* <button
-                  onClick={toggleDarkMode}
-                  className="w-1/2 m-2 p-3 flex justify-center items-center text-slate-400 hover:text-gray-800 cursor-pointer"
-                >
-                  {darkMode ? <Sun /> : <Moon />}
-                </button> */}
               </div>
             </motion.div>
           ) : (

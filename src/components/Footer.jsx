@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRight, Facebook } from "react-feather";
+import { ArrowRight } from "react-feather";
 import { footerData } from "../constant/FooterData";
 import ScrollToTop from "react-scroll-to-top";
 
@@ -36,18 +36,19 @@ function Footer() {
         <div className="flex flex-col items-center mt-6">
           <ul className="flex justify-center mb-2 -ml-5">
             {footerData.map((footer) => (
-              <li className="p-1">
+              <li className="p-1" key={footer.id}>
                 <a
                   href={footer.link}
                   className="text-white hover:text-[#D38C22] duration-300"
-                  key={footer.id}
-                  target="-blank"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {footer.icon}
                 </a>
               </li>
             ))}
           </ul>
+
           <div className="footer-copy">
             &#169; NasrullahDev. All rights reserved
           </div>
