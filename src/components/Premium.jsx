@@ -36,7 +36,7 @@ function Premium() {
               premium coffee plus the kettle made of resistant materials that
               you see in the image, for a special price.
             </p>
-            <div className="flex items-center gap-8">
+            <div className="flex items-center gap-8 flex-col xs:flex-row">
               <button className="button">Buy now</button>
               <a
                 href="#"

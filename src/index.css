@@ -38,15 +38,15 @@
   --z-fixed: 100;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
   :root {
     --biggest-font-size: 3.5rem;
-    --h1-font-size: 1.75rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+    --normal-font-size: 1.25rem;
+    --small-font-size: 1rem;
+    --smaller-font-size: 1rem;
   }
 }
 @layer base {
