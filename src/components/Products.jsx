@@ -19,12 +19,12 @@ function Products() {
   }, []);
 
   return (
-    <section id="products" className="max-w-screen-lg m-auto px-10 pt-24">
+    <section id="products" className="px-10 pt-24 lg:pl-20 xl:pl-32">
       <div className="products-container">
         <h2 className="section-title">
           Choose our delicious and best products
         </h2>
-        <ul className="grid grid-cols-2 gap-10 mb-14 cursor-pointer">
+        <ul className="grid grid-cols-2 gap-10 mb-14 cursor-pointer md:grid-cols-3">
           <li
             className="products-items products-line"
             data-filter=".delicacies"
@@ -41,7 +41,7 @@ function Products() {
             <span className="products-stock">4products</span>
           </li>
         </ul>
-        <div className="products grid grid-cols-[200px] justify-center">
+        <div className="products grid grid-cols-[200px] justify-center md:grid-cols-2 gap-8 lg:grid-cols-3 xl:grid-cols-4">
           {/* Map over the product data and generate product elements */}
           {productData.map((product) => (
             <article
