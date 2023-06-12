@@ -10,7 +10,7 @@ function Home() {
       className="mt-10 grid sm:grid-cols-2 items-stretch relative "
     >
       <div className="home-container p-10 bg-gradient-to-b from-zinc-800 to-neutral-900">
-        <div className="relative h-full lg:m-auto lg:px-10 lg:flex lg:flex-col lg:items-center lg justify-center">
+        <div className="relative h-full lg:m-auto lg:px-10 lg:flex lg:flex-col lg:justify-center xl:px-24">
           <h1 className="text-slate-50 text-4xl mb-5">
             Choose Your Favorite Coffee and Enjoy<span>.</span>
           </h1>

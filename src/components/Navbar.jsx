@@ -52,7 +52,7 @@ function Navbar() {
         !top && `shadow-lg backdrop-blur-lg bg-zinc-900 dark:bg-slate-800`
       } h-[70px] transition-all duration-500 z-[99]`}
     >
-      <div className="navbar w-full h-full flex justify-between items-center py-4 px-6">
+      <div className="navbar w-full h-full flex justify-between items-center py-4 px-6 lg:px-20 xl:px-32">
         <div>
           <a className="flex items-center gap-4" href="/">
             <img
@@ -67,7 +67,7 @@ function Navbar() {
         <div>
           <ul className="hidden md:flex md:items-center">
             <li>
-              <a href="#home" className="mr-6">
+              <a href="#" className="mr-6">
                 Home
               </a>
             </li>
