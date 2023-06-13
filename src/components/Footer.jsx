@@ -5,7 +5,7 @@ import ScrollToTop from "react-scroll-to-top";
 
 function Footer() {
   return (
-    <section className="max-w-screen-lg p-10 bg-black">
+    <section className="p-10 bg-black">
       <ScrollToTop
         smooth
         className=" rounded-full flex justify-center items-center bg-slate-10/90 p-3 bg-[#D38C22]"

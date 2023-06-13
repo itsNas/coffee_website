@@ -4,13 +4,13 @@ import { blogData } from "../constant/BlogData";
 
 function Blog() {
   return (
-    <section id="blog" className="px-10 pt-10 pb-8">
+    <section id="blog" className="px-10 pt-10 pb-8 lg:px-20 xl:px-32">
       <div className=" pb-8">
         <h2 className="section-title">
           Our Blogs Coffee with trending topic for this week
         </h2>
 
-        <div className="blog-content grids gap-12">
+        <div className="blog-content grids gap-12 md:grid-cols-2">
           {blogData.map((blog) => (
             <article className="blog-card" key={blog.id}>
               <div className="relative mb-6">
