@@ -8,7 +8,7 @@ function Footer() {
     <section className="p-10 bg-black lg:px-20 xl:px-32">
       <ScrollToTop
         smooth
-        className=" rounded-full flex justify-center items-center bg-slate-10/90 p-3 bg-[#D38C22]"
+        className="rounded-full flex justify-center items-center bg-slate-10/90 p-3 bg-[#D38C22]"
       />
       <div className="footer-container">
         <h1 className=" text-white text-2xl mb-8">Kona Kopi.</h1>
