@@ -5,7 +5,10 @@ import { ArrowRight } from "react-feather";
 
 function Premium() {
   return (
-    <section id="premium" className="px-10 mt-10 pb-8 pt-24 bg-white lg:px-20">
+    <section
+      id="premium"
+      className="px-10 mt-10 pb-8 pt-24 bg-white lg:px-20 xl:px-32"
+    >
       <div className="quality-container">
         <h2 className="section-title">
           We offer a premium quality and better quality preparation just for

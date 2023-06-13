@@ -4,7 +4,7 @@ import { blogData } from "../constant/BlogData";
 
 function Blog() {
   return (
-    <section id="blog" className="max-w-screen-lg px-10 pt-10 pb-8">
+    <section id="blog" className="px-10 pt-10 pb-8">
       <div className=" pb-8">
         <h2 className="section-title">
           Our Blogs Coffee with trending topic for this week
