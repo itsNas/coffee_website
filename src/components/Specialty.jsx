@@ -5,9 +5,9 @@ import Specialty3 from "../assets/img/specialty3.png";
 
 function Specialty() {
   return (
-    <section id="specialty" className="px-8 pt-24 lg:px-20 xl:px-32">
+    <section id="specialty" className="px-8 pt-24 lg:px-20 xl:px-32 xl:mb-20">
       <div className="specialty-container">
-        <div className="xl:flex items-center gap-80 mb-32">
+        <div className="xl:flex items-center gap-32 mb-20">
           <h2 className="section-title xl:my-auto">
             Specialty coffees that make you happy and cheer you up!
           </h2>

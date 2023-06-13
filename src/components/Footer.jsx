@@ -11,8 +11,8 @@ function Footer() {
         className=" rounded-full flex justify-center items-center bg-slate-10/90 p-3 bg-[#D38C22]"
       />
       <div className="footer-container">
-        <h1 className=" text-white text-2xl mb-8">Coffee.</h1>
-        <div className="grids gap-x-10 border-b border-gray-500 xl:grid-cols-4 items-center">
+        <h1 className=" text-white text-2xl mb-8">Kona Kopi.</h1>
+        <div className="grids gap-x-10 border-b border-gray-500 xl:grid-cols-4">
           <div className="footer-data">
             <p className="mb-3">Subscribe to our newsletter</p>
             <div className="flex items-center gap-2">
