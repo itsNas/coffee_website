@@ -5,26 +5,23 @@ import { ArrowRight } from "react-feather";
 
 function Premium() {
   return (
-    <section
-      id="premium"
-      className="max-w-screen-lg px-10 mt-10 pb-8 pt-24 bg-white"
-    >
+    <section id="premium" className="px-10 mt-10 pb-8 pt-24 bg-white lg:px-20">
       <div className="quality-container">
         <h2 className="section-title">
           We offer a premium quality and better quality preparation just for
           you!
         </h2>
-        <div className="quality-content grids">
-          <div className="relative justify-self-center ">
+        <div className="quality-content grids md:grid-cols-2 ">
+          <div className="relative justify-self-center">
             <img
               src={QualityImgBig}
               alt="image big"
-              className="rounded-lg mb-1"
+              className="rounded-lg w-72 md:pt-10 xl:pt-0"
             />
             <img
               src={QualityImgSmall}
               alt="image small"
-              className="rounded-lg"
+              className="rounded-lg w-24 absolute top-0 bottom-0 my-auto mx-0 translate-x-52"
             />
           </div>
           <div className="quality-data">

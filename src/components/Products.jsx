@@ -19,7 +19,7 @@ function Products() {
   }, []);
 
   return (
-    <section id="products" className="px-10 pt-24 lg:pl-20 xl:pl-32">
+    <section id="products" className="px-10 pt-24 lg:px-20 xl:px-32">
       <div className="products-container">
         <h2 className="section-title">
           Choose our delicious and best products
