@@ -5,14 +5,14 @@ import ScrollToTop from "react-scroll-to-top";
 
 function Footer() {
   return (
-    <section className="p-10 bg-black">
+    <section className="p-10 bg-black lg:px-20 xl:px-32">
       <ScrollToTop
         smooth
         className=" rounded-full flex justify-center items-center bg-slate-10/90 p-3 bg-[#D38C22]"
       />
       <div className="footer-container">
         <h1 className=" text-white text-2xl mb-8">Coffee.</h1>
-        <div className="grids gap-x-10 border-b border-gray-500">
+        <div className="grids gap-x-10 border-b border-gray-500 xl:grid-cols-4 items-center">
           <div className="footer-data">
             <p className="mb-3">Subscribe to our newsletter</p>
             <div className="flex items-center gap-2">
